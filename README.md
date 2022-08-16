@@ -2,6 +2,25 @@
 
 This is a [Discord] bot designed to create an Andromeda Labs gallery view from tokens.
 
+## QuickStart
+
+If you want to make a gallery image fast:
+
+Install [Poetry] and [ImageMagick]. Then run the following command using any combination of "spunk", "egg", and "apunk" and the requested token ids.
+
+> Only 4 images are supported at this time.
+
+```sh
+poetry install
+poetry run python local/create_gallery.py \
+  spunk 1 \
+  egg 2 \
+  apunk 3 \
+  spunk 4
+```
+
+![example gallery](./images/example.png)
+
 ## Table of Contents
 
 - [Setup](#setup)
@@ -92,7 +111,8 @@ docker run --rm gallerymaker:dev
 Alternatively, you can run the bot without using containers as well. You will need to have the following dependencies installed on your machine:
 
 - [Python3.10](https://www.python.org/)
-- [Poetry](https://python-poetry.org/docs/master/#installation)
+- [Poetry]
+- [ImageMagick]
 
 Install the python dependencies:
 
@@ -161,5 +181,5 @@ stars1z6mj02l2s8v0vsxfsark5v7t076ds8pu9nj2fv
 [Discord]: https://discord.com/
 [Andromeda Labs]: https://twitter.com/AndromaverseLab
 [stargaze-utils]: https://github.com/starship-ibc/stargaze-utils
-[/examples/get_collection_info.py]: https://github.com/starship-ibc/stargaze-utils/blob/main/examples/get_collection_info.py
-[/examples/get_new_collections.py]: https://github.com/starship-ibc/stargaze-utils/blob/main/examples/get_new_collections.py
+[Poetry]: https://python-poetry.org/docs/master/#installation
+[ImageMagick]: https://imagemagick.org/
