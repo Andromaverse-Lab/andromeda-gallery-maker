@@ -108,7 +108,13 @@ poetry run python -m gallerymaker
 
 ## Usage
 
-You can create new galleries.
+You can create new galleries using the command `/create-gallery` or you can run the system locally:
+
+```sh
+poetry run python local/create_gallery.py STARGAZE_PUNK 1 ANDROMA_PUNK 2 EGG 3 ANDROMAVERSE 4
+```
+
+> If you have a local or preferred IPFS server, you can set the `IPFS_ROOT` value.
 
 ## Deployment
 
